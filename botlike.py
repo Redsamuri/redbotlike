@@ -237,7 +237,7 @@ while True:
         if (Op.type != OpType.END_OF_OPERATION):
             cl.Poll.rev = max(cl.Poll.rev, Op.revision)
             bot(Op)
-	for posts in cl.activity(1)["result"]["posts"]:
+	for posts in cl.activity(1)["result"]:
 		if wait["posts"] == True:
 			if posts["postInfo"]["liked"] is False:
 				cl.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1002)
