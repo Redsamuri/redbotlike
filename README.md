@@ -23,7 +23,7 @@ pkg install git
 
 pkg install nano
 
-git clone https://github.com/Acil95/botlike
+git clone https://github.com/Redsamuri/redbotlike
 
 Selesai
 
@@ -44,13 +44,8 @@ python2 botlike.py
 
 Cara membuat bot auto like
 
-https://youtu.be/1kbhv2YrrXg
 
-Thanks to allah swt
-
-thanks to by acil
-
-black of gamer
+Thanks to redsamuri
 
 #COMMAND
 
