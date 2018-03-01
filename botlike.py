@@ -10,7 +10,7 @@ import os.path,sys,urllib,shutil,subprocess
 
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="EqAZXYflbv6S396HaqH6.MC3I4QsKSrV9tmqyKt6jHG.LyUlAJnjRR3cCFZTg9m7uzvuZJ5zsPnTu3ws29Qc8b8=")
 cl.loginResult()
 
 cl 
@@ -19,14 +19,14 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 i = 0
 c_text = """❂•••••••••••••AUTO LIKE BY•••••••••••••❂
-                  https://line.me/R/ti/p/%40iya4481p
+                  https://line.me/R/ti/p/~redsamuri1
 『⊰์◉⊱ᎢᎬᎪᎷ ᏴᏞᎪᏟᏦ ❂Ғ ᏀᎪᎷᎬᎡ⊰์◉⊱』"""
 
 KAC = [cl]
 mid = cl.getProfile().mid
 
 Bots = [mid]
-admin=["u54c7ad9784e86419f42e87f2aa39e1ec"]
+admin=["u94a1bc387b927e86756334648d314f86","u5b35c9714ca359616335efed888537a8","ube52b8931eee2e15a1b689377e3e5637","u1aedef8b888ae108d96bacbc5054e679","u99cde2e2a4a4b11bfd4cc418913e8986","u1865fbab05ea885ca7bd481ec35c9a1d","u46a050ebcc66a90b47fae6256547cc53","u656b0ca994a1c9b462f9feb6f5ae3177","ub5abe828cd964292195c3c59d6322033"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -34,9 +34,9 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':False,
-    'message':"❂••••••••••••••••••••••••••❂ https://line.me/R/ti/p/%40iya4481p『⊰์◉⊱ᎢᎬᎪᎷ ᏴᏞᎪᏟᏦ ❂Ғ ᏀᎪᎷᎬᎡ⊰์◉⊱』",
+    'message':"❂••••••••••••••••••••••••••❂ https://line.me/R/ti/p/~redsamuri1『⊰์◉⊱ᎢᎬᎪᎷ ᏴᏞᎪᏟᏦ ❂Ғ ᏀᎪᎷᎬᎡ⊰์◉⊱』",
     "lang":"JP",
-    "comment":"❂••••••••••••••••••••••••••❂ https://line.me/R/ti/p/%40iya4481p『⊰์◉⊱ᎢᎬᎪᎷ ᏴᏞᎪᏟᏦ ❂Ғ ᏀᎪᎷᎬᎡ⊰์◉⊱』",
+    "comment":"❂••••••••••••••••••••••••••❂ https://line.me/R/ti/p/~redsamuri1『⊰์◉⊱ᎢᎬᎪᎷ ᏴᏞᎪᏟᏦ ❂Ғ ᏀᎪᎷᎬᎡ⊰์◉⊱』",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
@@ -126,11 +126,11 @@ def bot(op):
                     pass
                 else:
                     cl.sendText(op.param1,str(wait["message"]))
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u54c7ad9784e86419f42e87f2aa39e1ec":
+                if msg.from_ == admin:
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
